@@ -1,0 +1,105 @@
+{
+  "switch": {
+    "success": {
+      "schema_version": "1.1",
+      "request_id": "req-042",
+      "ok": true,
+      "previous_policy": "default",
+      "active_policy": "scx_rusty",
+      "elapsed_ms": 120,
+      "error_code": null,
+      "recovery": "not_needed"
+    },
+    "already_active": {
+      "schema_version": "1.1",
+      "request_id": "req-043",
+      "ok": true,
+      "previous_policy": "scx_rusty",
+      "active_policy": "scx_rusty",
+      "elapsed_ms": 5,
+      "error_code": null,
+      "recovery": "not_needed"
+    },
+    "invalid_target": {
+      "schema_version": "1.1",
+      "request_id": "req-044",
+      "ok": false,
+      "previous_policy": "default",
+      "active_policy": "default",
+      "elapsed_ms": 12,
+      "error_code": "INVALID_TARGET",
+      "recovery": "not_needed"
+    },
+    "load_failed_restored_default": {
+      "schema_version": "1.1",
+      "request_id": "req-045",
+      "ok": false,
+      "previous_policy": "default",
+      "active_policy": "default",
+      "elapsed_ms": 850,
+      "error_code": "LOAD_FAILED",
+      "recovery": "restored_default"
+    }
+  },
+  "status": {
+    "agent_managed_scx_rusty": {
+      "schema_version": "1.1",
+      "ts_ms": 1795226405000,
+      "ok": true,
+      "active_policy": "scx_rusty",
+      "sched_ext_state": "enabled",
+      "managed_by_agent": true,
+      "pid": 12345,
+      "error_code": null,
+      "in_flight_request_id": null,
+      "last_switch_result": null
+    },
+    "default": {
+      "schema_version": "1.1",
+      "ts_ms": 1795226406000,
+      "ok": true,
+      "active_policy": "default",
+      "sched_ext_state": "disabled",
+      "managed_by_agent": false,
+      "pid": null,
+      "error_code": null,
+      "in_flight_request_id": null,
+      "last_switch_result": null
+    }
+  },
+  "timeout_then_load_failed": {
+    "in_progress": {
+      "schema_version": "1.1",
+      "ts_ms": 1795226407000,
+      "ok": true,
+      "active_policy": "default",
+      "sched_ext_state": "disabled",
+      "managed_by_agent": false,
+      "pid": null,
+      "error_code": null,
+      "in_flight_request_id": "req-045",
+      "last_switch_result": null
+    },
+    "finished": {
+      "schema_version": "1.1",
+      "ts_ms": 1795226408000,
+      "ok": true,
+      "active_policy": "default",
+      "sched_ext_state": "disabled",
+      "managed_by_agent": false,
+      "pid": null,
+      "error_code": null,
+      "in_flight_request_id": null,
+      "last_switch_result": {
+        "schema_version": "1.1",
+        "request_id": "req-045",
+        "ok": false,
+        "previous_policy": "default",
+        "active_policy": "default",
+        "elapsed_ms": 850,
+        "error_code": "LOAD_FAILED",
+        "recovery": "restored_default"
+      }
+    }
+  }
+}
