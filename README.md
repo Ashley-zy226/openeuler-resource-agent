@@ -1,5 +1,7 @@
 # 面向 openEuler 的自适应资源管控 Agent
 
+真机联调请看 [联调说明](联调说明.md)。独立交付包可从 [GitHub Releases](../../releases/tag/v1.1-dry-run) 下载。
+
 ## 在 MacBook 上运行第一版 Agent
 
 在项目根目录运行。需要 Python 3.10 或更高版本，使用标准库。
